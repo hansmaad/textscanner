@@ -25,7 +25,7 @@ const cam = (container) => {
         });
     };
 
-    const selectBtn = (camera) => {
+    const selectBtn = (camera, index) => {
         const btn = html(`<button class="btn">${camera.label || 'Camera ' + index}</button>`)
         const destroy = on(btn, 'click', () => {
             activateCam(camera);
